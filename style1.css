@@ -1,0 +1,353 @@
+@media screen and (max-width:1000px) {
+    .font {
+        text-align: justify;
+        word-spacing: 1px;
+    }
+
+    .hr_tag {
+        margin-left: 7%;
+        width: 86%;
+    }
+
+    /* --------- Home Section------------- */
+
+    .home {
+        display: flex;
+        padding: 2% 0%;
+    }
+
+    .intro {
+        width: 45%;
+        padding: 10% 5%;
+        margin-left: 2%;
+    }
+
+    #intro_pic img {
+        width: 80%;
+        margin-top: 18%;
+        margin-left: 10%;
+    }
+
+    /* -----------About Section-------------- */
+
+    #about {
+        margin: 1.3% 2% 0% 2%;
+    }
+
+    /* -----------------skills---------------- */
+
+    .skills {
+        margin: 1% 7%;
+        padding: 3% 0% 0% 0%;
+    }
+
+    .language li {
+        font-size: 1.25rem;
+    }
+
+    /* -------------- project------------- */
+    .project {
+        margin: 1% 7%;
+        padding: 3% 0% 0% 0%;
+    }
+
+    .project_title p {
+        line-height: 24px;
+        margin: 2% 0% 1% 14%;
+    }
+
+    .project_title a {
+        margin-left: 15%;
+    }
+
+    /* -------------contact me ------------ */
+
+    .contact {
+        margin: 1% 5%;
+        padding: 1% 2%;
+    }
+
+    .form {
+        margin: 2% 3%;
+    }
+
+    .form-input {
+        width: 60%
+    }
+
+    .submit_btn {
+        width: 12%;
+        margin: 6px;
+    }
+}
+
+.r_navbar {
+    height: 250px;
+    flex-direction: column;
+}
+
+.r_leftnav {
+    align-items: normal;
+    width: 100%;
+}
+
+.r_rightnav {
+    width: 100%;
+}
+
+.r_rightnav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.r_menu_bar {
+    position: absolute;
+    align-self: end;
+}
+
+@media screen and (max-width:800px) {
+
+    .navbar {
+        padding-top: 1%;
+        height: 35px;
+    }
+
+    .leftnav {
+        align-items: normal;
+        width: 80%;
+    }
+
+    .leftnav p {
+        font-size: 1.4rem;
+    }
+
+    .rightnav ul {
+        display: none;
+    }
+
+    .menu_bar {
+        display: block;
+    }
+
+    /* --------- Home Section------------- */
+    .intro {
+        width: 50%;
+    }
+
+    .intro h1 {
+        font-size: 2.9rem;
+        font-weight: 400;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .intro h3 {
+        font-size: 1rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    #intro_pic {
+        width: 50%;
+
+    }
+
+    #intro_pic img {
+        width: 90%;
+        margin-top: 25%;
+        margin-left: 3%;
+    }
+
+    /* -----------About Section-------------- */
+    #about_pic {
+        margin-top: 8%;
+    }
+
+    .about_detail h1 {
+        font-size: 2.1rem;
+    }
+
+    .about_detail p {
+        font-size: 0.9rem;
+        line-height: 16px;
+        word-spacing: 1px;
+    }
+
+    .degree {
+        font-size: 0.95rem;
+    }
+
+    .degree div {
+        font-size: 1.07rem;
+    }
+
+    /* -----------------skills---------------- */
+
+    .skills h1 {
+        font-size: 2.1rem;
+    }
+
+    .language li {
+        font-size: 1.2rem;
+    }
+
+    /* -------------- project------------- */
+    .project h1 {
+        font-size: 2.1rem;
+    }
+
+    .project_title_line {
+        width: 7rem;
+    }
+
+    .project_title {
+        font-size: 1.5rem;
+    }
+
+    .project_title p {
+        font-size: 1rem;
+        word-spacing: 1px;
+        line-height: 18px;
+    }
+
+    .project_title a {
+        font-size: 1.15rem;
+    }
+
+    /* -------------contact me ------------ */
+
+    .contact h1 {
+        font-size: 2.1rem;
+    }
+
+    .contact_title_line {
+        width: 8.5rem;
+    }
+
+    .form-input {
+        width: 90%
+    }
+
+    .submit_btn {
+        width: 20%;
+        margin: 6px;
+    }
+}
+
+@media screen and (max-width:503px) {
+
+    .menu_bar {
+        width: 12%;
+    }
+
+    /* --------- Home Section------------- */
+    .intro {
+        width: 100%;
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro h3 {
+        font-size: 1.1rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    #intro_pic {
+        display: none;
+    }
+
+    /* -----------About Section-------------- */
+    #about {
+        flex-direction: column;
+    }
+    #about_pic {
+        width: 95%;
+        margin: 4% 10% 0% 10%;
+        padding: 0%;
+    }
+    #about_pic img {
+        width: 80%;
+        height: 80%;
+    }
+    .about_detail {
+        width: 95%;
+    }    
+
+    .about_detail p {
+        font-size: 1rem;
+        line-height: 18px;
+        word-spacing: 1px;
+    }
+    #edu_line{
+        height: 17rem;
+    }
+    .degree {
+        font-size: 0.85rem;
+    }
+
+    .degree div {
+        font-size: 0.95rem;
+    }
+
+    /* -----------------skills---------------- */
+
+    .skills h1 {
+        font-size: 2rem;
+    }
+    .skills_title_line {
+        width: 4rem;
+    }
+    .language li {
+        font-size: 1.05rem;
+    }
+
+    /* -------------- project------------- */
+    .project h1 {
+        font-size: 2rem;
+    }
+    .project_title {
+        font-size: 1.1rem;
+    }
+
+    .project_title p {
+        font-size: 0.85rem;
+        word-spacing: 1px;
+        line-height: 16px;
+    }
+
+    .project_title a {
+        font-size: 1rem;
+    }
+    .project_title a span {
+        font-size: 1.05rem;
+    }
+
+    /* -------------contact me ------------ */
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact_title_line {
+        width: 8rem;
+    }
+
+    .form-input {
+        width: 90%
+    }
+
+    .submit_btn {
+        width: 30%;
+    }
+}

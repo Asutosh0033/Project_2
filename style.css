@@ -1,13 +1,15 @@
-*{
+* {
     padding: 0%;
     margin: 0px;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: rgb(0, 0, 38);
     color: white;
 }
-.btn{
+
+.btn {
     padding: 5px;
     border: 2px solid white;
     border-radius: 6px;
@@ -15,172 +17,226 @@ body{
     color: white;
     font-size: 1rem;
 }
-.line{
+
+.line {
     background-color: white;
 }
-.hr_tag{
-    width: 80%; 
-    margin-left:10%;
+
+.hr_tag {
+    width: 80%;
+    margin-left: 10%;
 }
-.font{
+
+.font {
     text-align: justify;
     word-spacing: 3px;
 }
-/* ------- Navigation Bar -----------------*/
 
-.navbar{
+/* ------- Navigation Bar -----------------*/
+.menu_bar {
+    width: 8%;
+    margin: 0.5% 3% 0.5% 0%;
+    display: none;
+}
+
+#menu_line1 {
+    margin: 0% 0% 15% 0%;
+    width: 100%;
+    height: 4px;
+}
+
+#menu_line2 {
+    margin: 15% 0%;
+    width: 100%;
+    height: 4px;
+}
+
+#menu_line3 {
+    margin: 15% 0% 0% 0%;
+    width: 100%;
+    height: 4px;
+}
+
+.navbar {
     background-color: rgb(25 0 89);
     position: fixed;
     width: 100%;
     display: flex;
     height: 45px;
 }
-.leftnav{
-width: 35%;
-display: flex;
-justify-content: center;
-align-items: center;
+
+.leftnav {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.leftnav p{
+
+.leftnav p {
     font-size: 1.8rem;
 }
-.rightnav{
+
+.rightnav {
     width: 65%;
 }
-.rightnav ul{
+
+.rightnav ul {
     display: flex;
     list-style: none;
     justify-content: center;
 }
-.rightnav ul li{
+
+.rightnav ul li {
     margin: 10px;
-    
-    
+
+
 }
-.rightnav ul li a{
+
+.rightnav ul li a {
     color: white;
-    padding:6px;
+    padding: 6px;
     text-decoration: none;
     font-size: 1.2rem;
 
 }
-.rightnav ul li a:hover{
+
+.rightnav ul li a:hover {
     color: red;
     font-size: 1.3rem;
-    cursor:default;
+    cursor: default;
 }
 
 /* --------------- Home Section ----------------*/
 
-.home{
+.home {
     display: flex;
     padding-bottom: 4%;
 }
-.intro{
-    /* border: 2px solid green; */
+
+.intro {
     width: 45%;
     padding: 10% 5%;
     margin-left: 5%;
 }
-.intro h1{
+
+.intro h1 {
     color: rgb(245, 245, 245);
     font-size: 4rem;
     font-weight: 500;
     margin-top: 2px;
 }
-.name{
+
+.name {
     color: rgb(237, 122, 255);
 }
-.intro p{
+
+.intro p {
     color: rgb(216, 210, 210);
     padding-top: 5px;
     font-size: 1.1rem;
 }
-#resume{
+
+#resume {
     margin-top: 18px;
 }
-.intro h2{
+
+.intro h2 {
     color: rgb(52, 136, 0);
     font-size: 2.1rem;
     font-weight: 600;
 }
-.intro h3{
+
+.intro h3 {
     color: whitesmoke;
     font-size: 1.3rem;
     font-weight: lighter;
 }
-#intro_pic{
+
+#intro_pic {
     width: 55%;
 
 }
-#intro_pic img{
+
+#intro_pic img {
     width: 70%;
     margin-top: 15%;
     margin-left: 13%;
 }
 
 /*------------------ About Section ---------------------*/
-#about{
+#about {
     margin: 0% 5%;
     padding: 1% 3%;
     display: flex;
 }
-#about_pic{
+
+#about_pic {
     width: 30%;
     height: 100%;
     margin: 1%;
     padding: 1%;
     margin-top: 4%;
 }
-#about_pic img{
+
+#about_pic img {
     width: 100%;
     height: 100%;
     border-radius: 13px;
 }
-.about_detail{
+
+.about_detail {
     margin: 1%;
     padding: 1%;
     width: 70%;
 }
-.about_detail h1{
+
+.about_detail h1 {
     font-size: 2.5rem;
 }
-.about1{
+
+.about1 {
     margin: 4px 0px;
     width: 8rem;
     height: 2px;
     margin-bottom: 2%;
     background-color: rgb(255, 17, 17);
 }
-.about_detail p{
+
+.about_detail p {
     color: rgb(204, 231, 234);
     font-size: 1.1rem;
     line-height: 23px;
     word-spacing: 5px;
 }
-.about_detail h2{
+
+.about_detail h2 {
     margin: 2% 0%;
 }
-#edu_line{
-    height: 17rem;
+
+#edu_line {
+    height: 18rem;
     width: 1px;
     margin-left: 2%;
 }
-.edu_detail{
+
+.edu_detail {
     display: flex;
-    
+
 }
-.degree{
+
+.degree {
     /* border: 2px solid red; */
     font-size: 1.1rem;
     color: rgb(209, 209, 209);
     width: 100%;
     margin: 3%;
 }
-.degree div{
+
+.degree div {
     font-size: 1.2rem;
 }
-.degree div a{
+
+.degree div a {
     line-height: 25px;
     text-decoration: none;
     margin: 45px 0px;
@@ -189,64 +245,75 @@ align-items: center;
 
 /* ------------------- Skills ----------------------- */
 
-.skills{
+.skills {
     margin: 1% 8%;
     padding: 2% 2% 0% 2%;
 }
-.skills h1{
+
+.skills h1 {
     font-size: 2.5rem;
 }
-.skills_title_line{
+
+.skills_title_line {
     width: 5rem;
     height: 1.5px;
     margin: 1px 0%;
     background-color: rgb(255, 17, 17);
 }
-.language{
+
+.language {
     margin: 2%;
 }
-.language li{
+
+.language li {
     margin: 1%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: cornsilk;
 }
 
 /* -------------------- Project ------------------- */
 
-.project{
+.project {
     margin: 1% 8%;
     padding: 2% 2% 0% 2%;
 }
-.project h1{
+
+.project h1 {
     font-size: 2.5rem;
 }
-.project_title_line{
+
+.project_title_line {
     width: 8rem;
     height: 1.5px;
     margin: 0.8% 0%;
     background-color: rgb(255, 17, 17);
 }
-.project_title{
+
+.project_title {
     margin: 2%;
     font-size: 1.8rem;
 }
-.project_title span{
+
+.project_title span {
     color: rgb(235, 1, 110);
 }
-.project_title p{
-    font-size: 1.25rem;
+
+.project_title p {
+    font-size: 1.15rem;
     margin: 2% 0% 1% 10%;
     word-spacing: 5px;
     line-height: 27px;
 }
-.project_title a{
+
+.project_title a {
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
-    margin-left:12%;
+    margin-left: 12%;
     text-decoration: none;
     cursor: default;
 }
-.project_title a span{
+
+.project_title a span {
     color: rgb(103, 95, 255);
     font-size: 1.2rem;
     cursor: pointer;
@@ -254,34 +321,39 @@ align-items: center;
 
 /* -------------------Contact Me---------------- */
 
-.contact{
+.contact {
     margin: 1% 8%;
     padding: 1% 2%;
 }
-.contact h1{
+
+.contact h1 {
     font-size: 2.5rem;
 }
-.contact_title_line{
+
+.contact_title_line {
     width: 10rem;
     height: 1.5px;
     margin: 0.8% 0%;
     background-color: rgb(255, 17, 17);
 }
-.form{
+
+.form {
     margin: 2% 1%;
     display: flex;
     flex-direction: column;
 }
-.form-input{
+
+.form-input {
     border: 2px solid black;
     border-radius: 10px;
     font-size: 1.25rem;
     padding: 5px;
     margin: 5px;
     width: 40%;
-    text-align: center;  
+    text-align: center;
 }
-.submit_btn{
+
+.submit_btn {
     width: 10%;
     margin: 5px;
 
