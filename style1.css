@@ -81,53 +81,56 @@
     }
 }
 
-.r_navbar {
-    height: 250px;
-    flex-direction: column;
-}
-
-.r_leftnav {
-    align-items: normal;
-    width: 100%;
-}
-
-.r_rightnav {
-    width: 100%;
-}
-
-.r_rightnav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.r_menu_bar {
-    position: absolute;
-    align-self: end;
-}
 
 @media screen and (max-width:800px) {
-
     .navbar {
         padding-top: 1%;
         height: 35px;
     }
-
+    
     .leftnav {
-        align-items: normal;
         width: 80%;
     }
-
+    
     .leftnav p {
         font-size: 1.4rem;
     }
 
-    .rightnav ul {
+    .rightnavul {
         display: none;
     }
 
     .menu_bar {
         display: block;
+    }
+    .r_navbar {
+        height: 235px;
+        flex-direction: column;
+        transition-duration: 0.6s;
+    }
+    
+    .r_leftnav {
+        align-items: normal;
+        width: 100%;
+        transition-duration: 0.8s;
+    }
+    
+    .r_rightnav {
+        width: 100%;
+        transition-duration: 0.7s;
+    }
+    
+    .r_rightnavul {
+        transition-duration: 0.7s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .r_menu_bar {
+        width: 5%;
+        position: absolute;
+        align-self: end;
     }
 
     /* --------- Home Section------------- */
@@ -179,12 +182,21 @@
         word-spacing: 1px;
     }
 
+    .info div {
+        margin: 2% 4% 2% 0%;
+    }
     .degree {
         font-size: 0.95rem;
     }
 
     .degree div {
         font-size: 1.07rem;
+    }
+    .more_info{
+        width: 50%;
+        margin: 3% 0% 0% 3%;
+        font-size: 1.2rem;
+        font-weight: 600;
     }
 
     /* -----------------skills---------------- */
@@ -242,8 +254,11 @@
 
 @media screen and (max-width:503px) {
 
-    .menu_bar {
+    .menu_bar{
         width: 12%;
+    }
+    .r_menu_bar{
+        width: 7%;
     }
 
     /* --------- Home Section------------- */
@@ -271,27 +286,34 @@
     #about {
         flex-direction: column;
     }
+
     #about_pic {
         width: 95%;
         margin: 4% 10% 0% 10%;
         padding: 0%;
     }
+
     #about_pic img {
         width: 80%;
         height: 80%;
     }
+
     .about_detail {
         width: 95%;
-    }    
+    }
 
     .about_detail p {
         font-size: 1rem;
         line-height: 18px;
         word-spacing: 1px;
     }
-    #edu_line{
+    .info div {
+        margin: 2% 6% 2% 0%;
+    }
+    #edu_line {
         height: 17rem;
     }
+
     .degree {
         font-size: 0.85rem;
     }
@@ -300,14 +322,36 @@
         font-size: 0.95rem;
     }
 
+    .more_info{
+        width: 100%;
+        margin: 2% 0% 0% 3%;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .more_info a{
+        margin: 4.2% 0% 2% 5%;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .more_info a img{
+        background-color: white;
+        border-radius: 20px;
+        width: 24px;
+        height: 24px;
+        margin-right: 4%;
+        
+    }
+
     /* -----------------skills---------------- */
 
     .skills h1 {
         font-size: 2rem;
     }
+
     .skills_title_line {
         width: 4rem;
     }
+
     .language li {
         font-size: 1.05rem;
     }
@@ -316,6 +360,7 @@
     .project h1 {
         font-size: 2rem;
     }
+
     .project_title {
         font-size: 1.1rem;
     }
@@ -329,6 +374,7 @@
     .project_title a {
         font-size: 1rem;
     }
+
     .project_title a span {
         font-size: 1.05rem;
     }
@@ -349,5 +395,9 @@
 
     .submit_btn {
         width: 30%;
+    }
+    #msg{
+        margin-left: 6%;
+        font-size: 1rem;
     }
 }

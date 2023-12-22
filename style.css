@@ -80,19 +80,19 @@ body {
     width: 65%;
 }
 
-.rightnav ul {
+.rightnavul {
     display: flex;
     list-style: none;
     justify-content: center;
 }
 
-.rightnav ul li {
+.rightnavul li {
     margin: 10px;
 
 
 }
 
-.rightnav ul li a {
+.rightnavul li a {
     color: white;
     padding: 6px;
     text-decoration: none;
@@ -100,7 +100,7 @@ body {
 
 }
 
-.rightnav ul li a:hover {
+.rightnavul li a:hover {
     color: red;
     font-size: 1.3rem;
     cursor: default;
@@ -209,10 +209,28 @@ body {
     word-spacing: 5px;
 }
 
-.about_detail h2 {
-    margin: 2% 0%;
+.info{
+    display: flex;
 }
 
+.info div {
+    margin: 2% 3% 2% 0%;
+    transition-duration: 0.85s;
+}
+.info div h2 {
+    font-size: 1.2rem;
+    color: rgb(190, 220, 108) ;
+}
+.info div h2:hover {
+    color: rgb(255, 50, 50);
+    font-size: 1.3rem;
+    cursor: default;
+}
+.info_line1{
+    background-color: rgb(255, 17, 17);
+    height: 1.5px;
+    width: 4rem;
+}
 #edu_line {
     height: 18rem;
     width: 1px;
@@ -220,12 +238,10 @@ body {
 }
 
 .edu_detail {
-    display: flex;
-
+    display: flex;   
 }
 
 .degree {
-    /* border: 2px solid red; */
     font-size: 1.1rem;
     color: rgb(209, 209, 209);
     width: 100%;
@@ -241,6 +257,37 @@ body {
     text-decoration: none;
     margin: 45px 0px;
     color: rgb(190, 131, 246);
+}
+
+.more_info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0% 0% 3%;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.more_info a{
+    margin: 5% 0% 5% 10%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+}
+.more_info a img{
+    background-color: white;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    margin-right: 5%;
+    
+}
+.more_info a:hover {
+    color: red;
+    font-size: 1.1rem;
+}
+
+.hide{
+    display: none;
 }
 
 /* ------------------- Skills ----------------------- */
@@ -338,7 +385,7 @@ body {
 }
 
 .form {
-    margin: 2% 1%;
+    margin: 2% 1% 0.65% 1%;
     display: flex;
     flex-direction: column;
 }
@@ -357,4 +404,9 @@ body {
     width: 10%;
     margin: 5px;
 
+}
+#msg{
+    color: rgb(87, 242, 15);
+    margin-left: 4%;
+    font-size: 1.1rem;
 }

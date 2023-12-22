@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
     <link class="favicon" rel="shortcut icon" href="profile.jpeg" type="image/x-icon">
-    
+
 </head>
+
 <body>
     <nav class="navbar">
         <div class="leftnav">
             <p>Asutosh kumar</p>
         </div>
         <div class="rightnav">
-            <ul>
+            <ul class="rightnavul">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -28,7 +30,7 @@
             <div class="line" id="menu_line2"></div>
             <div class="line" id="menu_line3"></div>
         </div>
-    </nav> 
+    </nav>
 
     <!-------------------- home section  ------------------->
 
@@ -38,60 +40,83 @@
             <h1>I'm <span class="name">Asutosh</span></h1>
             <h2>Web Developer</h2>
             <h3>From India</h3>
-            <p class="font">As a aspiring frontend Web developer, I love turning complex problems into elegant and user-friendly solutions. I have built web applications using HTML, CSS, and JavaScript. I am always eager to learn new technologies and improve my coding skills. </p>
-            <a href="./Resume.pdf" target="_blank"> 
+            <p class="font">As a aspiring frontend Web developer, I love turning complex problems into elegant and
+                user-friendly solutions. I have built web applications using HTML, CSS, and JavaScript. I am always
+                eager to learn new technologies and improve my coding skills. </p>
+            <a href="./Resume.pdf" target="_blank">
                 <button class="btn" id="resume">
                     Resume
                 </button>
             </a>
         </div>
         <div id="intro_pic">
-            <img src="https://cdni.iconscout.com/illustration/premium/thumb/developer-2143200-1801815.png" alt="Image not found" srcset="">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/developer-2143200-1801815.png"
+                alt="Image not found" srcset="">
         </div>
 
     </section>
     <hr class="hr_tag" id="About">
 
     <!-- ---------------About Section --------------------->
-    
+
     <section id="about">
         <div id="about_pic">
             <img src="profile.jpeg" alt="Unable to display" srcset="">
         </div>
         <div class="about_detail">
             <h1>About Me:</h1>
-            <div class="line about1" ></div>
+            <div class="line about1"></div>
             <p class="font">I'm a passionate web developer
-                I love creating beautiful and functional websites that meet the needs and expectations of my clients. I have a strong knowledge of HTML, CSS, and JavaScript. I'm always eager to learn new skills and explore new challenges.
-                
-                
+                I love creating beautiful and functional websites that meet the needs and expectations of my clients. I
+                have a strong knowledge of HTML, CSS, and JavaScript. I'm always eager to learn new skills and explore
+                new challenges.
+
+
             </p>
-            <h2>Education</h2>
+            <div class="info">
+                <div>
+                    <h2 onclick="show_edu()">Education</h2>
+                    <div class="line1 info_line1"></div>
+                </div>
+                <div>
+                    <h2 onclick="show_info()">More Info</h2>
+                    <div class="line2"></div>
+                </div>
+            </div>
             <div class="edu_detail">
 
                 <div class="line" id="edu_line"></div>
-                <div>
+                <div class="education">
                     <div class="degree">
                         2021-2025
                         <div>
-                        <a href="https://nita.ac.in/" target="_blank">National Institute of Technology Agartala</a>
+                            <a href="https://nita.ac.in/" target="_blank">National Institute of Technology Agartala</a>
                         </div>
-                        I am Pursuing Bachelor of Technology in Computer Science and Engineering stream with current CGPA of 7.96
+                        I am Pursuing Bachelor of Technology in Computer Science and Engineering stream with current
+                        CGPA of 7.96
                     </div>
                     <div class="degree">
                         2019-2020
-                        <div >
-                        <a href="https://www.apsdanapur.com/"> Army Public School Danapur Cantt</a>
+                        <div>
+                            <a href="https://www.apsdanapur.com/"> Army Public School Danapur Cantt</a>
                         </div>
                         I have successfully completed my Intermidiate (10+2) from CBSE with 75.2% marks.
                     </div>
                     <div class="degree">
                         2017-2018
-                        <div >
-                        <a href="https://www.apsdanapur.com/"> Army Public School Danapur Cantt </a>
+                        <div>
+                            <a href="https://www.apsdanapur.com/"> Army Public School Danapur Cantt </a>
                         </div>
                         I have successfully completed my Matriculation from CBSE with 74.8%
                     </div>
+                </div>
+                <div class="more_info hide">
+                    Links
+                    <a href="mailto:ashutoshkumar300225@gmail.com" target="_blank"><img src="gmail.png" alt="">Gmail</a>
+                    <a href="https://www.linkedin.com/in/asutosh-kumar-7541681b3/"target="_blank"><img src="linkedin-48.png" alt="">Linkedln</a>
+                    <a href="https://github.com/Asutosh0033"target="_blank"><img src="github.png" alt="">Github</a>
+                    <a href="https://leetcode.com/Asutoshkumar/"target="_blank"><img src="LeetCode.png" alt="">LeetCode</a>
+                    <a href="https://www.codechef.com/users/ashutosh0033"target="_blank"><img src="codechef.png" alt="">CodeChef</a>
                 </div>
             </div>
         </div>
@@ -103,10 +128,10 @@
     <hr class="hr_tag" id="skills">
     <section class="skills">
         <h1>Skills:-</h1>
-        <div class="line skills_title_line" ></div>
+        <div class="line skills_title_line"></div>
         <div>
             <ul class="language">
-                <li>Web Development(HTML,CSS,JavaScript)</li>
+                <li>Web Development (HTML,CSS,JavaScript)</li>
                 <li>C language</li>
                 <li>C++</li>
                 <li>Python</li>
@@ -121,16 +146,23 @@
     <hr class="hr_tag" id="project">
     <section class="project">
         <h1>My Projects:-</h1>
-        <div class="line project_title_line" ></div>
+        <div class="line project_title_line"></div>
         <div class="project_title" id="project1">
             Project 1: <span>Educational website</span>
-            <p class="font">Designed and developed a responsive and user-friendly website for an educational institution featuring its director’s message, facilities, courses and contact details using <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
-            <a href="https://asutosh0033.github.io/web_development_project_1/" target="_blank">Website link : <span>Click Here</span></a>
+            <p class="font">Designed and developed a responsive and user-friendly website for an educational institution
+                featuring its director’s message, facilities, courses and contact details using <span>HTML</span>,
+                <span>CSS</span> and <span>JavaScript</span>.</p>
+            <a href="https://asutosh0033.github.io/web_development_project_1/" target="_blank">Website link :
+                <span>Click Here</span></a>
         </div>
         <div class="project_title" id="project2">
             Project 2: <span>Portfolio </span>
-            <p class="font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, quaerat nisi consectetur velit explicabo ut nemo voluptatem qui dignissimos cum corporis veritatis sed nobis ducimus tempore? Eligendi, dolorem est! Esse!
-            Sed nulla consectetur id fuga unde maxime quis ad. Assumenda cum nesciunt molestias soluta, accusamus libero esse temporibus voluptatum repudiandae debitis id sint maxime molestiae obcaecati, explicabo animi in quae.</p>
+            <p class="font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, quaerat nisi
+                consectetur velit explicabo ut nemo voluptatem qui dignissimos cum corporis veritatis sed nobis ducimus
+                tempore? Eligendi, dolorem est! Esse!
+                Sed nulla consectetur id fuga unde maxime quis ad. Assumenda cum nesciunt molestias soluta, accusamus
+                libero esse temporibus voluptatum repudiandae debitis id sint maxime molestiae obcaecati, explicabo
+                animi in quae.</p>
             <a href="" target="_blank">Website link : <span>Click Here</span></a>
 
         </div>
@@ -141,15 +173,18 @@
     <hr class="hr_tag" id="contact">
     <section class="contact">
         <h1>Contact Me:-</h1>
-        <div class="line contact_title_line" ></div>
-        <div class="form">
-            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
-            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
-            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
-             <textarea class="form-input" name="text" id="text" cols="20" rows="6"  placeholder="Ellaborate your concern"></textarea>
-            <button class="btn submit_btn">Submit</button>
-        </div>
+        <div class="line contact_title_line"></div>
+        <form class="form" name="submit-to-google-sheet">
+            <input class="form-input" type="text" name="Name" placeholder="Enter Your name" required>
+            <input class="form-input" type="email" name="Email" placeholder="Enter Your email" required>
+            <input class="form-input" type="number" name="Mobile" placeholder="Enter Your Phone">
+            <textarea class="form-input" name="Message" cols="20" rows="6"
+                placeholder="Ellaborate your concern"></textarea>
+            <button type="submit" class="btn submit_btn">Submit</button>
+        </form>
+        <span id="msg"></span>
     </section>
     <script src="project.js"></script>
 </body>
+
 </html>
